@@ -10,6 +10,12 @@
 
     $ x new react-spa ProjectName
 
+Alternatively write new project files directly into an empty repository, using the Directory Name as the ProjectName:
+
+    $ git clone https://github.com/<User>/<ProjectName>.git
+    $ cd <ProjectName>
+    $ x new react-spa
+
 ## Development workflow
 
 Our recommendation during development is to run the `dev` npm script or Gulp task and leave it running in the background:
@@ -191,7 +197,7 @@ We are always open to [your feedback](https://github.com/facebookincubator/creat
 After creation, your project should look like this:
 
 ```
-react-spa-template/
+react-spa/
   README.md
   node_modules/
   package.json
@@ -2203,7 +2209,7 @@ For more information see [Add Firebase to your JavaScript Project](https://fireb
 Open your `package.json` and add a `homepage` field for your project:
 
 ```json
-  "homepage": "https://myusername.github.io/react-spa-template",
+  "homepage": "https://myusername.github.io/react-spa",
 ```
 
 or for a GitHub user page:
@@ -2218,7 +2224,7 @@ Create React App uses the `homepage` field to determine the root URL in the buil
 
 Now, whenever you run `npm run build`, you will see a cheat sheet with instructions on how to deploy to GitHub Pages.
 
-To publish it at [https://myusername.github.io/react-spa-template](https://myusername.github.io/react-spa-template), run:
+To publish it at [https://myusername.github.io/react-spa](https://myusername.github.io/react-spa), run:
 
 ```sh
 npm install --save gh-pages
